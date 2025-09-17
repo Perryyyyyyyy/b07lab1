@@ -32,8 +32,6 @@ class Polynomial{
         return result;
     }
     public double evaluate(double x){
-        // 6 - 2x + 5x^2
-        // [6,-2,5]
         double result = 0;
         for(int i=0;i<this.coefficients.length;i++){
             result+= this.coefficients[i] * Math.pow(x,i);
